@@ -1,0 +1,41 @@
+{
+	"compilerOptions": {
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+		"target": "ES2020",
+		"useDefineForClassFields": true,
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"paths": {
+			"@components/*": ["./src/weather-dashboard/views/components/*"],
+			"@types/*": ["./src/weather-dashboard/types/*"],
+			"@utils/*": ["./src/weather-dashboard/utils/*"],
+			"@models/*": ["./src/weather-dashboard/models/*"],
+			"@enums/*": ["./src/weather-dashboard/models/enums/*"],
+			"@constants/*": ["./src/weather-dashboard/models/constants/*"],
+			"@interfaces/*": ["./src/weather-dashboard/models/interfaces/*"],
+			"@viewmodels/*": ["./src/weather-dashboard/viewmodels/*"],
+			"@services/*": ["./src/weather-dashboard/services/*"],
+			"@views/*": ["./src/weather-dashboard/views/*"],
+			"@helpers/*": ["./src/weather-dashboard/models/helpers/*"]
+		},
+
+		/* Bundler mode */
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"isolatedModules": true,
+		"moduleDetection": "force",
+		"noEmit": true,
+		"jsx": "react-jsx",
+
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedSideEffectImports": true
+	},
+	"include": ["./src"]
+}

@@ -1,0 +1,38 @@
+{
+	"compilerOptions": {
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+		"target": "ES2022",
+		"lib": ["ES2023"],
+		"module": "ESNext",
+		"jsx": "react-jsx",
+		"skipLibCheck": true,
+		"paths": {
+			"@components/*": ["./src/weather-dashboard/views/components/*"],
+			"@types/*": ["./src/weather-dashboard/types/*"],
+			"@utils/*": ["./src/weather-dashboard/utils/*"],
+			"@models/*": ["./src/weather-dashboard/models/*"],
+			"@constants/*": ["./src/weather-dashboard/models/constants/*"],
+			"@enums/*": ["./src/weather-dashboard/models/enums/*"],
+			"@interfaces/*": ["./src/weather-dashboard/models/interfaces/*"],
+			"@viewmodels/*": ["./src/weather-dashboard/viewmodels/*"],
+			"@services/*": ["./src/weather-dashboard/services/*"],
+			"@views/*": ["./src/weather-dashboard/views/*"],
+			"@helpers/*": ["./src/weather-dashboard/models/helpers/*"]
+		},
+
+		/* Bundler mode */
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"isolatedModules": true,
+		"moduleDetection": "force",
+		"noEmit": true,
+
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedSideEffectImports": true
+	},
+	"include": ["vite.config.ts"]
+}
